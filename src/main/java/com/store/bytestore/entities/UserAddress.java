@@ -44,12 +44,14 @@ public class UserAddress {
     private String department;
 
     @Column(nullable = false, length = 100)
+    @Builder.Default
     private String country = "Colombia";
 
     @Column(length = 20)
     private String postalCode;
 
     @Column(nullable = false)
+    @Builder.Default
     private boolean isDefault = false;
 
     @CreationTimestamp
