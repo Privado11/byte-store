@@ -1,4 +1,4 @@
-package com.store.bytestore.repository;
+package com.store.bytestore.reposiroty;
 
 import com.store.bytestore.entities.ProductVariant;
 import org.springframework.data.jpa.repository.JpaRepository;

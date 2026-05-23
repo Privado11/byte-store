@@ -27,6 +27,10 @@ public class UserToken {
     @Column(nullable = false)
     private TokenType type;
 
+    @Column(nullable = false)
+    @Builder.Default
+    private Boolean revoked = false;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", nullable = false)
     private User user;

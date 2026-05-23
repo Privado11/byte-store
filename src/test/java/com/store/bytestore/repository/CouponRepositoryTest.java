@@ -207,7 +207,7 @@ class CouponRepositoryTest extends AbstractIntegrationDBTest {
         @DisplayName("Código de cupón debe ser único")
         void shouldNotAllowDuplicateCouponCode() {
             Coupon duplicate = Coupon.builder()
-                    .code("DESCUENTO20") 
+                    .code("DESCUENTO20")
                     .type(CouponType.PERCENTAGE)
                     .value(new BigDecimal("10.00"))
                     .isActive(true)
